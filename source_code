@@ -1,0 +1,22 @@
+import random
+
+def genrate_random_email():
+    f_name = ['dave','joe','paul','steve']
+    l_name = ['doe','smith','jones','peters']
+    
+    rand_num = random.randint(20,99)
+    x=random.choice(f_name)
+    y=random.choice(l_name)
+    rand_email = f"{x}{y}{rand_num}@gmail.com"
+    print(rand_email)
+    another_email()
+    
+def another_email():
+    print("print more??")
+    entry= input("Y OR N")
+    if entry.lower()== "y":
+        genrate_random_email()
+    else:
+        print("quit")
+genrate_random_email()        
+    
